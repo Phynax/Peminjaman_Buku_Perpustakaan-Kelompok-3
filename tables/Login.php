@@ -15,7 +15,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($email == $user_email && $password == $user_password) {
         // Jika login berhasil, arahkan ke halaman index.php
         $_SESSION['user'] = $email; // Set sesi pengguna
-        header("Location: index.php");
+        header("Location: ../index.html");
+        
         exit();
     } else {
         $error_message = "Email atau password salah!";
