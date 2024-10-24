@@ -10,13 +10,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Verifikasi sederhana (dalam kasus nyata, cek dari database)
     $user_email = "Kelompok3@gmail.com"; // Email yang valid (misalnya dari database)
-    $user_password = "password123";   // Password yang valid
+    $user_password = "password123";      // Password yang valid
 
     if ($email == $user_email && $password == $user_password) {
-        // Jika login berhasil, arahkan ke halaman index.php
+        // Jika login berhasil, simpan data di sesi dan redirect ke halaman index.html
         $_SESSION['user'] = $email; // Set sesi pengguna
-        header("Location: ../index.html");
-        
+        $_SESSION['login_success'] = true; // Flag untuk login sukses
+
+        header("Location: ../index.php"); // Arahkan ke halaman index setelah login
         exit();
     } else {
         $error_message = "Email atau password salah!";
@@ -74,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <div class="signup-form">
           <div class="title">Signup</div>
-          <form action="signup.php" method="POST">
+          <form action="../index.php" method="POST">
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-user"></i>
