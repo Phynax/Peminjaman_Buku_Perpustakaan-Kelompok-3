@@ -42,13 +42,13 @@ const modalShowcase = `
 					</div>
 					<div class="col-md-6 col-lg-4">
 						<div class="preview-showcase shadow-sm">
-							<a href="../demo1/index.html" data-kt-href="true" class="preview-thumbnail">
+							<a href="../index.html" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
 									Classic Dashboard	
 								</h3>
 
 								<div class="overflow-hidden">
-									<img src="assets/img/kaiadmin/demo1.png" class="w-100 rounded-1 shadow-sm preview-img" data-loaded="true">
+									<img src="assets/img/kaiadmin.png" class="w-100 rounded-1 shadow-sm preview-img" data-loaded="true">
 								</div>
 							</a>
 						</div>
