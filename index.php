@@ -66,7 +66,7 @@ if (isset($_SESSION['login_success']) && $_SESSION['login_success'] === true) {
         <div class="sidebar-logo">
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
-            <a href="index.html" class="logo">
+            <a href="index.php" class="logo">
               <img
                 src="assets/img/kaiadmin/logo_light.svg"
                 alt="navbar brand"
@@ -105,7 +105,7 @@ if (isset($_SESSION['login_success']) && $_SESSION['login_success'] === true) {
                 <div class="collapse" id="dashboard">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="../index.html">
+                      <a href="../index.php">
                         <span class="sub-item">Dashboard 1</span>
                       </a>
                     </li>
@@ -247,7 +247,7 @@ if (isset($_SESSION['login_success']) && $_SESSION['login_success'] === true) {
           <div class="main-header-logo">
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="dark">
-              <a href="index.html" class="logo">
+              <a href="index.php" class="logo">
                 <img
                   src="assets/img/kaiadmin/logo_light.svg"
                   alt="navbar brand"

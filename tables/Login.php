@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user_password = "password123";      // Password yang valid
 
     if ($email == $user_email && $password == $user_password) {
-        // Jika login berhasil, simpan data di sesi dan redirect ke halaman index.html
+        // Jika login berhasil, simpan data di sesi dan redirect ke halaman index.php
         $_SESSION['user'] = $email; // Set sesi pengguna
         $_SESSION['login_success'] = true; // Flag untuk login sukses
 

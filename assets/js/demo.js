@@ -36,13 +36,13 @@ const modalShowcase = `
 									<p class="fw-bold mb-0 op-5">Please check our docs</p>
 								</div>
 							</div>
-							<a href="../../documentation/index.html" class="btn btn-primary w-100 mb-3">Documentation</a>
+							<a href="../../documentation/index.php" class="btn btn-primary w-100 mb-3">Documentation</a>
 							<a href="https://kaiadmin.themekita.com/" class="btn btn-secondary w-100">Buy Now</a>
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-4">
 						<div class="preview-showcase shadow-sm">
-							<a href="../index.html" data-kt-href="true" class="preview-thumbnail">
+							<a href="../index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
 									Classic Dashboard	
 								</h3>
@@ -55,7 +55,7 @@ const modalShowcase = `
 					</div>
 					<div class="col-md-6 col-lg-4">
 						<div class="preview-showcase shadow-sm">
-							<a href="../demo2/index.html" data-kt-href="true" class="preview-thumbnail">
+							<a href="../demo2/index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
 									White Classic Dashboard	
 								</h3>
@@ -68,7 +68,7 @@ const modalShowcase = `
 					</div>
 					<div class="col-md-6 col-lg-4">
 						<div class="preview-showcase shadow-sm">
-							<a href="../demo3/index.html" data-kt-href="true" class="preview-thumbnail">
+							<a href="../demo3/index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
 									Dark Dashboard	
 								</h3>
@@ -81,7 +81,7 @@ const modalShowcase = `
 					</div>
 					<div class="col-md-6 col-lg-4">
 						<div class="preview-showcase shadow-sm">
-							<a href="../demo4/index.html" data-kt-href="true" class="preview-thumbnail">
+							<a href="../demo4/index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
 									Creative Dashboard	
 								</h3>
@@ -94,7 +94,7 @@ const modalShowcase = `
 					</div>
 					<div class="col-md-6 col-lg-4">
 						<div class="preview-showcase shadow-sm">
-							<a href="../demo5/index.html" data-kt-href="true" class="preview-thumbnail">
+							<a href="../demo5/index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
 									Trendy Dashboard	
 								</h3>
@@ -107,7 +107,7 @@ const modalShowcase = `
 					</div>
 					<div class="col-md-6 col-lg-4">
 						<div class="preview-showcase shadow-sm">
-							<a href="../demo6/index.html" data-kt-href="true" class="preview-thumbnail">
+							<a href="../demo6/index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
 									Trendy 2 Dashboard	
 								</h3>
@@ -120,7 +120,7 @@ const modalShowcase = `
 					</div>
 					<div class="col-md-6 col-lg-4">
 						<div class="preview-showcase shadow-sm">
-							<a href="../demo7/index.html" data-kt-href="true" class="preview-thumbnail">
+							<a href="../demo7/index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
 									Horizontal Dashboard	
 								</h3>
@@ -133,7 +133,7 @@ const modalShowcase = `
 					</div>
 					<div class="col-md-6 col-lg-4">
 						<div class="preview-showcase shadow-sm">
-							<a href="../demo8/index.html" data-kt-href="true" class="preview-thumbnail">
+							<a href="../demo8/index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
 									Enterprise Dashboard	
 								</h3>
@@ -146,7 +146,7 @@ const modalShowcase = `
 					</div>
 					<div class="col-md-6 col-lg-4">
 						<div class="preview-showcase shadow-sm">
-							<a href="../demo9/index.html" data-kt-href="true" class="preview-thumbnail">
+							<a href="../demo9/index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
 									Futuristic Dashboard	
 								</h3>
