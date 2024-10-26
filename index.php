@@ -135,7 +135,7 @@ if (isset($_SESSION['login_success']) && $_SESSION['login_success'] === true) {
                       </a>
                     </li>
                     <li>
-                      <a href="tables/datatables.html">
+                      <a href="tables/datatables.php">
                         <span class="sub-item">Datatables</span>
                       </a>
                     </li>
