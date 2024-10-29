@@ -129,11 +129,7 @@ if (isset($_SESSION['login_success']) && $_SESSION['login_success'] === true) {
                 </a>
                 <div class="collapse" id="tables">
                   <ul class="nav nav-collapse">
-                    <li>
-                      <a href="tables/tables.html">
-                        <span class="sub-item">Basic Table</span>
-                      </a>
-                    </li>
+                    
                     <li>
                       <a href="tables/datatables.php">
                         <span class="sub-item">Datatables</span>
