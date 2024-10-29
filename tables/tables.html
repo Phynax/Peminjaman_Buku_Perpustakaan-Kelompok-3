@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Tables - Kaiadmin Bootstrap 5 Admin Dashboard</title>
+    <title>Tables - Kaiadmin Bootstrap 5 Admin Home</title>
     <meta
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
       name="viewport"
@@ -48,7 +48,7 @@
         <div class="sidebar-logo">
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
-            <a href="../index.html" class="logo">
+            <a href="../index.php" class="logo">
               <img
                 src="../assets/img/kaiadmin/logo_light.svg"
                 alt="navbar brand"
@@ -76,19 +76,19 @@
               <li class="nav-item">
                 <a
                   data-bs-toggle="collapse"
-                  href="#dashboard"
+                  href="#Home"
                   class="collapsed"
                   aria-expanded="false"
                 >
                   <i class="fas fa-home"></i>
-                  <p>Dashboard</p>
+                  <p>Home</p>
                   <span class="caret"></span>
                 </a>
-                <div class="collapse" id="dashboard">
+                <div class="collapse" id="Home">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="../../demo1/index.html">
-                        <span class="sub-item">Dashboard 1</span>
+                      <a href="..//index.php">
+                        <span class="sub-item">Home Page</span>
                       </a>
                     </li>
                   </ul>
@@ -158,7 +158,7 @@
           <div class="main-header-logo">
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="dark">
-              <a href="../index.html" class="logo">
+              <a href="../index.php" class="logo">
                 <img
                   src="../assets/img/kaiadmin/logo_light.svg"
                   alt="navbar brand"
@@ -568,7 +568,7 @@
                   </div>
                   <div class="card-body">
                     <div class="card-sub">
-                      This is the basic table view of the ready dashboard :
+                      This is the basic table view of the ready Home :
                     </div>
                     <table class="table mt-3">
                       <thead>
@@ -1245,7 +1245,7 @@
         } else {
           content.icon = "none";
         }
-        content.url = "index.html";
+        content.url = "index.php";
         content.target = "_blank";
 
         $.notify(content, {

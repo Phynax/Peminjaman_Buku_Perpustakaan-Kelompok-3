@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Kaiadmin - Bootstrap 5 Admin Dashboard</title>
+    <title>Kaiadmin - Bootstrap 5 Admin Home</title>
     <meta
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
       name="viewport"
@@ -94,19 +94,19 @@ if (isset($_SESSION['login_success']) && $_SESSION['login_success'] === true) {
               <li class="nav-item active">
                 <a
                   data-bs-toggle="collapse"
-                  href="#dashboard"
+                  href="#Home"
                   class="collapsed"
                   aria-expanded="false"
                 >
                   <i class="fas fa-home"></i>
-                  <p>Dashboard</p>
+                  <p>Home</p>
                   <span class="caret"></span>
                 </a>
-                <div class="collapse" id="dashboard">
+                <div class="collapse" id="Home">
                   <ul class="nav nav-collapse">
                     <li>
                       <a href="../index.php">
-                        <span class="sub-item">Dashboard 1</span>
+                        <span class="sub-item">Home Page</span>
                       </a>
                     </li>
                   </ul>
@@ -562,8 +562,8 @@ if (isset($_SESSION['login_success']) && $_SESSION['login_success'] === true) {
               class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4"
             >
               <div>
-                <h3 class="fw-bold mb-3">Dashboard</h3>
-                <h6 class="op-7 mb-2">Free Bootstrap 5 Admin Dashboard</h6>
+                <h3 class="fw-bold mb-3">Home</h3>
+                <h6 class="op-7 mb-2">Free Bootstrap 5 Admin Home</h6>
               </div>
               <div class="ms-md-auto py-2 py-md-0">
                 <a href="#" class="btn btn-label-info btn-round me-2">Manage</a>

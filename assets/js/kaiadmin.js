@@ -62,9 +62,9 @@ $(document).ready(function(){
 
 	$('.btn-refresh-card').on('click', function(){var e=$(this).parents(".card");e.length&&(e.addClass("is-loading"),setTimeout(function(){e.removeClass("is-loading")},3e3))})
 
-	var scrollbarDashboard = $('.sidebar .scrollbar');
-	if (scrollbarDashboard.length > 0) {
-		scrollbarDashboard.scrollbar();
+	var scrollbarHome = $('.sidebar .scrollbar');
+	if (scrollbarHome.length > 0) {
+		scrollbarHome.scrollbar();
 	}
 
 	var contentScrollbar = $('.main-panel .content-scroll');

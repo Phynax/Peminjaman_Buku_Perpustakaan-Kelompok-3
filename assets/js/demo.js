@@ -19,7 +19,7 @@ const modalShowcase = `
 	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen p-5">
 		<div class="modal-content rounded-4">
 			<div class="modal-header px-md-5 py-md-4 mt-2 mb-3 shadow-sm border-0">
-				<h3 class="h5 fw-extrabold mb-0">Choose Layouts Dashboard</h3>
+				<h3 class="h5 fw-extrabold mb-0">Choose Layouts Home</h3>
 				<button type="button" class="btn-close me-1" data-bs-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
 				<path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
 			  </svg>
@@ -44,7 +44,7 @@ const modalShowcase = `
 						<div class="preview-showcase shadow-sm">
 							<a href="../index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
-									Classic Dashboard	
+									Classic Home	
 								</h3>
 
 								<div class="overflow-hidden">
@@ -57,7 +57,7 @@ const modalShowcase = `
 						<div class="preview-showcase shadow-sm">
 							<a href="../demo2/index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
-									White Classic Dashboard	
+									White Classic Home	
 								</h3>
 
 								<div class="overflow-hidden">
@@ -70,7 +70,7 @@ const modalShowcase = `
 						<div class="preview-showcase shadow-sm">
 							<a href="../demo3/index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
-									Dark Dashboard	
+									Dark Home	
 								</h3>
 
 								<div class="overflow-hidden">
@@ -83,7 +83,7 @@ const modalShowcase = `
 						<div class="preview-showcase shadow-sm">
 							<a href="../demo4/index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
-									Creative Dashboard	
+									Creative Home	
 								</h3>
 
 								<div class="overflow-hidden">
@@ -96,7 +96,7 @@ const modalShowcase = `
 						<div class="preview-showcase shadow-sm">
 							<a href="../demo5/index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
-									Trendy Dashboard	
+									Trendy Home	
 								</h3>
 
 								<div class="overflow-hidden">
@@ -109,7 +109,7 @@ const modalShowcase = `
 						<div class="preview-showcase shadow-sm">
 							<a href="../demo6/index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
-									Trendy 2 Dashboard	
+									Trendy 2 Home	
 								</h3>
 
 								<div class="overflow-hidden">
@@ -122,7 +122,7 @@ const modalShowcase = `
 						<div class="preview-showcase shadow-sm">
 							<a href="../demo7/index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
-									Horizontal Dashboard	
+									Horizontal Home	
 								</h3>
 
 								<div class="overflow-hidden">
@@ -135,7 +135,7 @@ const modalShowcase = `
 						<div class="preview-showcase shadow-sm">
 							<a href="../demo8/index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
-									Enterprise Dashboard	
+									Enterprise Home	
 								</h3>
 
 								<div class="overflow-hidden">
@@ -148,7 +148,7 @@ const modalShowcase = `
 						<div class="preview-showcase shadow-sm">
 							<a href="../demo9/index.php" data-kt-href="true" class="preview-thumbnail">
 								<h3 class="preview-title">
-									Futuristic Dashboard	
+									Futuristic Home	
 								</h3>
 
 								<div class="overflow-hidden">
@@ -193,7 +193,7 @@ Circles.create({
 $.notify({
 	icon: 'icon-bell',
 	title: 'Kaiadmin',
-	message: 'Premium Bootstrap 5 Admin Dashboard',
+	message: 'Premium Bootstrap 5 Admin Home',
 },{
 	type: 'secondary',
 	placement: {
