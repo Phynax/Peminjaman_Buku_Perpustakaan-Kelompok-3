@@ -68,10 +68,10 @@ if (isset($_SESSION['login_success']) && $_SESSION['login_success'] === true) {
           <div class="logo-header" data-background-color="dark">
             <a href="index.php" class="logo">
               <img
-                src="assets/img/kaiadmin/logo_light.svg"
+                src="assets/img/kaiadmin/Strada.png"
                 alt="navbar brand"
                 class="navbar-brand"
-                height="20"
+                height="160"
               />
             </a>
             <div class="nav-toggle">
@@ -176,7 +176,7 @@ if (isset($_SESSION['login_success']) && $_SESSION['login_success'] === true) {
             <div class="logo-header" data-background-color="dark">
               <a href="index.php" class="logo">
                 <img
-                  src="assets/img/kaiadmin/logo_light.svg"
+                  src="C:\Users\hp\Downloads\Strada.png"
                   alt="navbar brand"
                   class="navbar-brand"
                   height="20"
@@ -559,7 +559,7 @@ if (isset($_SESSION['login_success']) && $_SESSION['login_success'] === true) {
             >
               <div>
                 <h3 class="fw-bold mb-3">Home</h3>
-                <h6 class="op-7 mb-2">Free Bootstrap 5 Admin Home</h6>
+                <h6 class="op-7 mb-2">Peminjaman Buku Perpustakaan</h6>
               </div>
               <div class="ms-md-auto py-2 py-md-0">
                 <a href="#" class="btn btn-label-info btn-round me-2">Manage</a>
