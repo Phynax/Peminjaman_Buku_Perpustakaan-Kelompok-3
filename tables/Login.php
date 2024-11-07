@@ -53,9 +53,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['signup'])) {
     $stmt->bind_param("sss", $name, $email, $password);
 
     if ($stmt->execute()) {
-        echo "Pendaftaran berhasil. Silakan login.";
+        echo "";
     } else {
-        $error_message = "Pendaftaran gagal: " . $stmt->error;
+        $error_message = "Pendaftaran gagal email telah diambil atau Nama sudah terdaftar!";
     }
     $stmt->close();
 }
