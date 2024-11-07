@@ -570,7 +570,7 @@ if (isset($_SESSION['login_success'])) {
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
                         <div class="numbers">
-                          <p class="card-category">Visitors</p>
+                          <p class="card-category">Pengunjung</p>
                           <h4 class="card-title">1,294</h4>
                         </div>
                       </div>
@@ -591,7 +591,7 @@ if (isset($_SESSION['login_success'])) {
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
                         <div class="numbers">
-                          <p class="card-category">Subscribers</p>
+                          <p class="card-category">Berlangganan</p>
                           <h4 class="card-title">1303</h4>
                         </div>
                       </div>
@@ -612,7 +612,7 @@ if (isset($_SESSION['login_success'])) {
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
                         <div class="numbers">
-                          <p class="card-category">Sales</p>
+                          <p class="card-category">Pendapatan</p>
                           <h4 class="card-title">$ 1,345</h4>
                         </div>
                       </div>
@@ -633,7 +633,7 @@ if (isset($_SESSION['login_success'])) {
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
                         <div class="numbers">
-                          <p class="card-category">Order</p>
+                          <p class="card-category">Terpinjam</p>
                           <h4 class="card-title">576</h4>
                         </div>
                       </div>
@@ -1382,9 +1382,7 @@ if (isset($_SESSION['login_success'])) {
             </div>
           </div>
         </div>
-        <div class="custom-toggle">
-          <i class="icon-settings"></i>
-        </div>
+        
       </div>
       <!-- End Custom template -->
     </div>
