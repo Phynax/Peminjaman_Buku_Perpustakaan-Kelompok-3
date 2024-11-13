@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, h1, h2, h3, h4, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4; /* Warna latar belakang yang lebih cerah */
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, rgba(27, 38, 44, 0.6), rgba(15, 76, 117, 0.6)), url('../assets/library-bg.jpg') no-repeat center center; /* Ganti dengan gambar latar belakang perpustakaan */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -16px;
+    width: 2px;
+    height: 45px;
+    background-color: white;
+    transform: translateY(-50%);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+/* Intro Section Styling */
+#intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #D6A37C;
+    margin-bottom: 40px;
+}
+
+.intro-content {
+    display: flex;
+    max-width: 1000px;
+    gap: 20px;
+    padding: 20px;
+    background-color: #3A415D;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.intro-text {
+    max-width: 500px;
+}
+
+.intro-text h2 {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Peminjaman Section */
+#peminjaman {
+    padding: 20px;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+#peminjaman form {
+    display: flex;
+    flex-direction: column;
+}
+
+#peminjaman label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#peminjaman input, #peminjaman select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#peminjaman button {
+    padding: 10px;
+    background-color: #3A415D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#peminjaman button:hover {
+    background-color: #ffdd57;
+}
+
+/* Daftar Buku Section */
+#daftar-buku {
+    padding: 20px;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+#daftar-buku ul {
+    list-style-type: none;
+}
+
+#daftar-buku li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#daftar-buku li:last-child {
+    border-bottom: none;
+}
+
+/* Footer styling */
+footer {
+    background: linear-gradient(45deg, rgba(15, 78, 109, 0.8), rgba(44, 30, 87, 0.8));
+    color: white;
+    padding: 30px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.info-kiri {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.info-kanan {
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.info-kanan li {
+    list-style: none;
+    position: relative;
+}
+
+.info-kanan li a {
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.info-kanan li a:hover {
+    color: #ffdd57;
+}
+
+.info-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s;
+}
+
+.info-mid:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.info-mid a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #intro-section {
+        padding: 20px 10px;
+    }
+    
+    .intro-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #peminjaman, #daftar-buku {
+        max-width: 100%;
+        margin: 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
