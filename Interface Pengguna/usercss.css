@@ -154,7 +154,7 @@ nav ul li a:hover {
 }
 
 /* Daftar Buku Section */
-#daftar-buku {
+#daftarbuku {
     padding: 20px;
     margin: 0;
     background-color: #fff;
@@ -164,16 +164,16 @@ nav ul li a:hover {
     margin: 40px auto;
 }
 
-#daftar-buku ul {
+#daftarbuku ul {
     list-style-type: none;
 }
 
-#daftar-buku li {
+#daftarbuku li {
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }
 
-#daftar-buku li:last-child {
+#daftarbuku li:last-child {
     border-bottom: none;
 }
 
@@ -256,7 +256,7 @@ footer {
         max-width: 300px;
     }
 
-    #peminjaman, #daftar-buku {
+    #peminjaman, #daftarbuku {
         max-width: 100%;
         margin: 20px;
     }

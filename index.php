@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="assets/css/demo.css" />
   </head>
   <body>
-<?php
+  <?php
 session_start();
 
 if (isset($_SESSION['login_success'])) {
@@ -52,7 +52,7 @@ if (isset($_SESSION['login_success'])) {
         document.addEventListener('DOMContentLoaded', function() {
             Swal.fire({
                 title: 'Login Berhasil!',
-                text: 'Selamat datang " . $_SESSION['user'] . "!',
+                text: 'Selamat datang " . $_SESSION['user_name'] . "!',
                 icon: 'success',
                 confirmButtonText: 'OK'
             });
@@ -61,7 +61,6 @@ if (isset($_SESSION['login_success'])) {
     unset($_SESSION['login_success']); // Hapus session agar pesan tidak muncul lagi saat refresh halaman
 }
 ?>
-
     <div class="wrapper">
       <!-- Sidebar -->
       <div class="sidebar" data-background-color="dark">

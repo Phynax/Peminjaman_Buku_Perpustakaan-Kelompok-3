@@ -12,48 +12,44 @@ if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
 
-// Mengambil data dari form
-$nama = $_POST['nama'];
-$email = $_POST['email'];
-$alamat = $_POST['alamat']; // Menambahkan alamat
-$no_telepon = $_POST['no_telepon']; // Menambahkan nomor telepon
+// Memeriksa apakah data POST ada
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Mengambil data dari form
+    $id_peminjam = isset($_POST['id_peminjam']) ? $_POST['id_peminjam'] : null;
+    $id_buku = isset($_POST['id_buku']) ? $_POST['id_buku'] : null;
+    $tanggal_pinjam = isset($_POST['tanggal_pinjam']) ? $_POST['tanggal_pinjam'] : null;
+    $tanggal_kembali = isset($_POST['tanggal_kembali']) ? $_POST['tanggal_kembali'] : null;
 
+    // Memeriksa apakah semua data ada
+    if ($id_peminjam && $id_buku && $tanggal_pinjam) {
+        // Menyimpan data peminjaman ke dalam database
+        $sql_peminjaman = "INSERT INTO peminjaman (id_peminjam, id_buku, tanggal_pinjam, tanggal_kembali) VALUES (?, ?, ?, ?)";
+        $stmt_peminjaman = $conn->prepare($sql_peminjaman);
 
-// Menyimpan data peminjam ke dalam database
-$sql_peminjam = "INSERT INTO peminjam (nama, alamat, no_telepon, email) VALUES (?, ?, ?, ?)";
-$stmt_peminjam = $conn->prepare($sql_peminjam);
-$stmt_peminjam->bind_param("ssss", $nama, $alamat, $no_telepon, $email);
+        if ($stmt_peminjaman === false) {
+            die("Error preparing statement: " . $conn->error);
+        }
 
-if ($stmt_peminjam->execute()) {
-    // Mendapatkan ID peminjam yang baru saja ditambahkan
-    $id_peminjam = $stmt_peminjam->insert_id;
+        // Mengikat parameter
+        $stmt_peminjaman->bind_param("iiss", $id_peminjam, $id_buku, $tanggal_pinjam, $tanggal_kembali);
 
-    // Menyimpan data peminjaman ke dalam database
-    $sql_peminjaman = "INSERT INTO peminjaman (id_peminjam, buku_id, tanggal) VALUES (?, ?, ?)";
-    $stmt_peminjaman = $conn->prepare($sql_peminjaman);
-    $stmt_peminjaman->bind_param("iis", $id_peminjam, $buku_id, $tanggal);
+        if ($stmt_peminjaman->execute()) {
+            // Jika berhasil, redirect dengan pesan
+            header("Location: peminjaman.php?pesan=peminjaman");
+            exit(); // Pastikan untuk keluar setelah redirect
+        } else {
+            // Jika gagal, tampilkan pesan error
+            echo "Error: " . $stmt_peminjaman->error;
+        }
 
-    if ($stmt_peminjaman->execute()) {
-        // Mengurangi jumlah stok buku setelah peminjaman
-        $update_sql = "UPDATE buku SET jumlah_stok = jumlah_stok - 1 WHERE id_buku = ?";
-        $update_stmt = $conn->prepare($update_sql);
-        $update_stmt->bind_param("i", $buku_id);
-        $update_stmt->execute();
-        $update_stmt->close();
-
-        // Jika berhasil, redirect dengan pesan
-        header("Location: peminjaman.php?pesan=peminjaman");
+        // Menutup koneksi
+        $stmt_peminjaman->close();
     } else {
-        // Jika gagal, tampilkan pesan error
-        echo "Error: " . $stmt_peminjaman->error;
+        echo "Semua field harus di isi.";
     }
 } else {
-    // Jika gagal, tampilkan pesan error
-    echo "Error: " . $stmt_peminjam->error;
+    echo "Tidak ada data yang dikirim.";
 }
 
-// Menutup koneksi
-$stmt_peminjaman->close();
-$stmt_peminjam->close();
 $conn->close();
 ?>

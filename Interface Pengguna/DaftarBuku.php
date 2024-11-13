@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan - Peminjaman Buku</title>
+    <title>Daftar Buku - Perpustakaan Sekolah</title>
     <script src="https://kit.fontawesome.com/1c46902ba5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../Interface Pengguna/usercss.css">
     <style>
@@ -43,20 +43,16 @@
     </header>
 
     <main>
-        <section id="intro-section">
-            <div class="intro-content">
-                <div class="intro-image">
-                    <img src="../assets/img/kaiadmin/Strada.png" alt="Perpustakaan">
-                </div>
-                <div class="intro-text">
-                    <h2>Selamat datang di Perpustakaan Sekolah!</h2>
-                    <p>Kami menyediakan berbagai koleksi buku untuk menunjang pendidikan dan pengetahuan Anda. Silakan jelajahi koleksi kami dan lakukan peminjaman buku secara online.</p>
-                </div>
-            </div>
-        </section>
+        <section id="daftarbuku">
+            <h2>Daftar Buku Tersedia</h2>
             <table>
                 <thead>
-             
+                    <tr>
+                        <th>ID Buku</th>
+                        <th>Judul</th>
+                        <th>Pengarang</th>
+                        <th>Tahun Terbit</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <?php
@@ -76,7 +72,18 @@
                     $sql = "SELECT * FROM buku";
                     $result = $conn->query($sql);
 
-                    
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<tr>
+                                    <td>" . $row['id_buku'] . "</td>
+                                    <td>" . $row['judul'] . "</td>
+                                    <td>" . $row['pengarang'] . "</td>
+                                    <td>" . $row['tahun_terbit'] . "</td> <!-- Ganti 'tahun_terbit' dengan nama kolom yang sesuai -->
+                                  </tr>";
+                        }
+                    } else {
+                        echo "<tr><td colspan='4'>Tidak ada buku tersedia</td></tr>";
+                    }
                     $conn->close(); // Menutup koneksi
                     ?>
                 </tbody>
@@ -97,8 +104,7 @@
             <li><a href="#"><i class="fa-solid fa-envelope-open-text"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
-        </div>
-    </footer>
+        </div </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
