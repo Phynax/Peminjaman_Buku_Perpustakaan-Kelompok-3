@@ -26,7 +26,7 @@
     </style>
 </head>
 <body>
-    <header>
+<header>
         <h1>Perpustakaan Sekolah</h1>
         <nav>
             <ul>
@@ -34,9 +34,10 @@
                 <li><a href="peminjaman.php">Peminjaman Buku</a></li>
                 <li><a href="daftarbuku.php">Daftar Buku</a></li>
                 <li><a href="sejarah.html">Sejarah Perpustakaan</a></li>
+                <li><a href="BuatIDPeminjam.php">Buat ID Peminjam</a></li>
             </ul>
         </nav>
-        <div class="auth-buttons">
+	<div class="auth-buttons">
             <a href="login.php" class="auth-btn login-btn">Login</a>
             <a href="logout.php" class="auth-btn logout-btn">Logout</a>
         </div>

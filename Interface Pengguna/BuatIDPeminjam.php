@@ -73,23 +73,27 @@
     </style>
 </head>
 <body>
-    <header>
+<header>
         <h1>Perpustakaan Sekolah</h1>
         <nav>
             <ul>
-                <li><a href="User  .php">Home</a></li>
+                <li><a href="User.php">Home</a></li>
                 <li><a href="peminjaman.php">Peminjaman Buku</a></li>
                 <li><a href="daftarbuku.php">Daftar Buku</a></li>
                 <li><a href="sejarah.html">Sejarah Perpustakaan</a></li>
-                <li><a href="create_id.php">Buat ID Peminjam</a></li>
+                <li><a href="BuatIDPeminjam.php">Buat ID Peminjam</a></li>
             </ul>
         </nav>
+	<div class="auth-buttons">
+            <a href="login.php" class="auth-btn login-btn">Login</a>
+            <a href="logout.php" class="auth-btn logout-btn">Logout</a>
+        </div>
     </header>
 
     <main>
         <section id="create-id">
             <h2>Buat ID Peminjam</h2>
-            <form action="proses_create_id.php" method="POST">
+            <form action="proses_BuatIDPeminjam.php" method="POST">
                 <label for="nama">Nama Lengkap:</label>
                 <input type="text" id="nama" name="nama" required>
 
