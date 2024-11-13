@@ -20,19 +20,20 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, rgba(27, 38, 44, 0.6), rgba(15, 76, 117, 0.6)), url('../assets/library-bg.jpg') no-repeat center center; /* Ganti dengan gambar latar belakang perpustakaan */
+    background: linear-gradient(135deg, rgba(27, 38, 44, 0.8), rgba(15, 76, 117, 0.8)), url('../assets/library-bg.jpg') no-repeat center center; /* Ganti dengan gambar latar belakang perpustakaan */
     background-size: cover;
     color: white;
     text-align: center;
-    padding: 50px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 60px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
     position: relative;
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
@@ -62,11 +63,12 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #ffdd57;
+    transform: scale(1.1);
 }
 
 /* Intro Section Styling */
@@ -86,13 +88,18 @@ nav ul li a:hover {
     padding: 20px;
     background-color: #3A415D;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .intro-image img {
     width: 400px;
     height: auto;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.intro-image img:hover {
+    transform: scale(1.05);
 }
 
 .intro-text {
@@ -100,7 +107,7 @@ nav ul li a:hover {
 }
 
 .intro-text h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: white;
     margin-bottom: 20px;
 }
@@ -116,7 +123,7 @@ nav ul li a:hover {
     padding: 20px;
     margin: 0;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     max-width: 600px;
     margin: 40px auto;
@@ -137,6 +144,12 @@ nav ul li a:hover {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+#peminjaman input:focus, #peminjaman select:focus {
+    border-color: #3A415D;
+    outline: none;
 }
 
 #peminjaman button {
@@ -147,10 +160,12 @@ nav ul li a:hover {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 #peminjaman button:hover {
     background-color: #ffdd57;
+    transform: scale(1.05);
 }
 
 /* Daftar Buku Section */
@@ -158,7 +173,7 @@ nav ul li a:hover {
     padding: 20px;
     margin: 0;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     max-width: 600px;
     margin: 40px auto;
@@ -171,6 +186,11 @@ nav ul li a:hover {
 #daftarbuku li {
     padding: 10px;
     border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+
+#daftarbuku li:hover {
+    background-color: #f0f0f0;
 }
 
 #daftarbuku li:last-child {
@@ -182,7 +202,7 @@ footer {
     background: linear-gradient(45deg, rgba(15, 78, 109, 0.8), rgba(44, 30, 87, 0.8));
     color: white;
     padding: 30px;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
     position: relative;
     display: flex;
@@ -212,31 +232,11 @@ footer {
     color: white;
     font-size: 40px;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .info-kanan li a:hover {
     color: #ffdd57;
-}
-
-.info-mid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.3);
-    transition: background-color 0.3s;
-}
-
-.info-mid:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.info-mid a {
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
 }
 
 /* Responsive adjustments */

@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan - Peminjaman Buku</title>
+    <title>Perpustakaan - Sejarah Perpustakaan</title>
     <script src="https://kit.fontawesome.com/1c46902ba5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../Interface Pengguna/usercss.css">
     <style>
-        table {
+        .image-slot {
             width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
+            height: 300px;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            font-size: 24px;
+            color: #888;
         }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        tr:hover {
-            background-color: #f1f1f1;
+        p {
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -30,7 +28,7 @@
         <h1>Perpustakaan Sekolah</h1>
         <nav>
             <ul>
-                <li><a href="User.php">Home</a></li>
+                <li><a href="User .php">Home</a></li>
                 <li><a href="peminjaman.php">Peminjaman Buku</a></li>
                 <li><a href="daftarbuku.php">Daftar Buku</a></li>
                 <li><a href="sejarah.html">Sejarah Perpustakaan</a></li>
@@ -49,38 +47,30 @@
                     <img src="../assets/img/kaiadmin/Strada.png" alt="Perpustakaan">
                 </div>
                 <div class="intro-text">
-                    <h2>Selamat datang di Perpustakaan Sekolah!</h2>
-                    <p>Kami menyediakan berbagai koleksi buku untuk menunjang pendidikan dan pengetahuan Anda. Silakan jelajahi koleksi kami dan lakukan peminjaman buku secara online.</p>
+                    <h2>Sejarah Perpustakaan</h2>
+                    <div class="image-slot">
+                        [Gambar Sejarah Perpustakaan]
+                    </div>
+                    <p>
+                        Perpustakaan adalah lembaga yang menyediakan akses terhadap berbagai sumber informasi, baik dalam bentuk buku, jurnal, maupun media digital. Sejarah perpustakaan dimulai sejak zaman kuno, ketika manusia pertama kali mulai mengumpulkan dan menyimpan informasi.
+                    </p>
+                    <p>
+                        Pada zaman Mesopotamia, sekitar 2500 SM, perpustakaan pertama kali didirikan di kota Ur. Perpustakaan ini menyimpan tablet tanah liat yang berisi tulisan kuno. Seiring berjalannya waktu, perpustakaan mulai berkembang di berbagai peradaban, termasuk Mesir, Yunani, dan Romawi.
+                    </p>
+                    <p>
+                        Di era modern, perpustakaan mengalami transformasi besar dengan munculnya teknologi informasi. Perpustakaan tidak hanya berfungsi sebagai tempat penyimpanan buku, tetapi juga sebagai pusat pembelajaran dan penelitian. Dengan adanya internet, perpustakaan kini menyediakan akses ke berbagai sumber daya digital, termasuk e-book, jurnal online, dan database penelitian.
+                    </p>
+                    <p>
+                        Saat ini, perpustakaan juga berperan penting dalam masyarakat dengan menyediakan program literasi, seminar, dan kegiatan komunitas lainnya. Perpustakaan modern berusaha untuk menjangkau semua kalangan, termasuk anak-anak, remaja, dan orang dewasa, untuk meningkatkan minat baca dan pengetahuan masyarakat.
+                    </p>
+                    <div class="image-slot">
+                        [Gambar Kegiatan Perpustakaan]
+                    </div>
+                    <p>
+                        Dengan demikian, perpustakaan tidak hanya menjadi tempat untuk meminjam buku, tetapi juga menjadi ruang untuk belajar, berinteraksi, dan mengembangkan diri. Sejarah perpustakaan adalah cerminan dari perkembangan peradaban manusia dalam mencari dan menyebarkan pengetahuan.
+                    </p>
                 </div>
             </div>
-        </section>
-            <table>
-                <thead>
-             
-                </thead>
-                <tbody>
-                    <?php
-                    // Koneksi ke database
-                    $host = 'localhost';
-                    $user = 'root';
-                    $password = '';
-                    $dbname = 'db_peminjaman_buku';
-
-                    $conn = new mysqli($host, $user, $password, $dbname);
-
-                    if ($conn->connect_error) {
-                        die("Koneksi gagal: " . $conn->connect_error);
-                    }
-
-                    // Mengambil dan menampilkan daftar buku
-                    $sql = "SELECT * FROM buku";
-                    $result = $conn->query($sql);
-
-                    
-                    $conn->close(); // Menutup koneksi
-                    ?>
-                </tbody>
-            </table>
         </section>
     </main>
 
@@ -93,7 +83,7 @@
             <p>&copy; 2024 Perpustakaan Sekolah. All rights reserved.</p>
         </div>
         
-        <div class="info-kanan">
+        <div class=" info-kanan">
             <li><a href="#"><i class="fa-solid fa-envelope-open-text"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>

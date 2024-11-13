@@ -33,7 +33,7 @@
                 <li><a href="User.php">Home</a></li>
                 <li><a href="peminjaman.php">Peminjaman Buku</a></li>
                 <li><a href="daftarbuku.php">Daftar Buku</a></li>
-                <li><a href="sejarah.php">Sejarah Perpustakaan</a></li>
+                <li><a href="sejarah.html">Sejarah Perpustakaan</a></li>
             </ul>
         </nav>
         <div class="auth-buttons">
