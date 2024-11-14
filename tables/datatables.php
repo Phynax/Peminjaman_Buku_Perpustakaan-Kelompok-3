@@ -590,7 +590,10 @@ switch ($tabel) {
     $idKolom = 'id_buku';
     break;
   case 'karyawan':
-    $idKolom = 'id_karyawan';
+ $idKolom = 'id_karyawan';
+    break;
+  case 'peminjaman':
+    $idKolom = 'id_peminjaman';
     break;
   default:
     $idKolom = null;
@@ -635,6 +638,7 @@ if (isset($_POST['simpan']) && $tabel && $idKolom) {
     <option value="peminjam" <?php if ($tabel == 'peminjam') echo 'selected'; ?>>Peminjam</option>
     <option value="buku" <?php if ($tabel == 'buku') echo 'selected'; ?>>Buku</option>
     <option value="karyawan" <?php if ($tabel == 'karyawan') echo 'selected'; ?>>Karyawan</option>
+    <option value="peminjaman" <?php if ($tabel == 'peminjaman') echo 'selected'; ?>>Peminjaman</option>
   </select>
 
   <label for="search_id">Cari berdasarkan ID:</label>

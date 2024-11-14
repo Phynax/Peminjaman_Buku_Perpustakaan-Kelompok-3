@@ -39,9 +39,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
 
                 // Redirect berdasarkan role
                 if ($user['role'] == 'admin') {
-                    header("Location: ../index.php");
+                    header("Location: ../index.php?pesan=login");
                 } elseif ($user['role'] == 'anggota') {
-                    header("Location: ../interface pengguna/user.php");
+                    header("Location: ../interface pengguna/user.php?pesan=login");
                 }
                 exit();
             } else {
@@ -113,7 +113,8 @@ $conn->close();
                 <div class="login-form">
                     <div class="title">Login</div>
                     <?php if (isset($error_message)) { echo "<p style='color:red;'>$error_message</p>"; } ?>
-                    <form action="" method="POST">
+                    <form action="" ```php
+                    method="POST">
                         <div class="input-boxes">
                             <div class ="input-box">
                                 <i class="fas fa-user"></i>

@@ -49,7 +49,7 @@ $dataBuku = [
             </tbody>
         </table>
 
-        <a href="logout.php" class="button">Logout</a>
+        <a href="login.php" class="button">Logout</a>
     </div>
 </body>
 </html>
